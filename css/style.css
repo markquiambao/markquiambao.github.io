@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.hero {
+
+	height: 100vh;
+	width: 100%;
+	background:#eff4fd;
+}
+
+nav {
+	display: flex;
+	margin: auto;
+	width: 84%;
+	padding: 20px 0;
+	/*align-items: center;*/
+	justify-content: space-between;
+	white-space: nowrap;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+	text-decoration: none;
+	color: #564c4c;
+	font-weight: bold;
+	word-spacing: 10px;
+	letter-spacing: 5px
+}
+nav ul li a:active,
+nav ul li a:hover {
+	
+	border-bottom: 2px solid #E67e22;
+}
+
+.logo {
+	float: left;
+	height: 100px;
+	width: auto;
+	margin-top: -8px;
+}
+
+.details {
+	margin-left: 8%;
+	margin-top: 13%;
+}
+
+.details h1 {
+	font-size: 50px;
+	color: #564c4c;
+	margin-bottom: 20px;
+	word-spacing: 10px;
+	letter-spacing: 5px;
+}
+
+.details p {
+	color: #564c4c;
+	line-height: 22px;
+	word-spacing: 10px;
+	letter-spacing: 1.5px
+}
+
+.details a:link,
+.details a:visited{
+	text-decoration: none;
+	padding: 10px 18px;
+	font-weight: bold;
+	color: #564c4c;
+	background: #E67e22;
+	display: inline-block;
+	margin: 30px 0;
+	border-radius: 15px;
+	transition: 0.5s;
+}
+
+.details a:hover,
+.details a:active {
+	background-color: #edc29b;
+	transition: 0.5s;
+}
+
+
+span {
+	color:#E67e22;
+}
+
+.images-wrapper img {
+	
+	width: 250px;
+	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	transition:	0.5s ease-out 100ms;
+	cursor: pointer;
+}
+
+
+.images-wrapper::before {
+	content: "";
+	position: absolute;
+	background: rgb(80,80,80, 0.503);
+	width: 25rem;
+	height: 50px;
+	bottom: 200px;
+	filter: blur(20px);
+	border-radius: 50%;
+}
+
+.images-wrapper img:hover{
+	transform: scale(1.05);
+}
+
+.images-wrapper {
+	width: 42%;
+    /* height: 90%; */
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 37px;
+    display: flex;
+    float: right;
+    margin-top: -490px;
+}
+
+.images-wrapper .thumbnail1 {
+	height: 20rem;
+	margin-right: -20px;
+}
+.images-wrapper .thumbnail2 {
+	height: 25rem;
+	margin-right: -20px;
+
+}
+.images-wrapper .thumbnail3 {
+	height: 20rem;
+	margin-right: -20px;
+}
